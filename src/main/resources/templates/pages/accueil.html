@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Ma page d'accueil</title>
+</head>
+<body>
+<!-- <h1 th:text="'hello '+${title}+'!'">Hello Bigmoletos!</h1> -->
+<p th:text="'jour: '+${#dates.dayOfWeekName(date)}"></p>
+<p th:text="'nous sommes le:  '+${#dates.format(#dates.createNow(),'dd/MM/YYYY HH:mm')}"></p>
+<p th:text="'mois :  '+${#dates.format(#dates.createNow(),'MMMM ')}"></p>
+<p th:text="'jour année:  '+${#dates.format(#dates.createNow(),'DDD')}"></p>
+<p th:text="'jour:   '+${#dates.format(#dates.createNow(),'EEEE ')}"></p>
+<p th:text="'il est   '+${#dates.format(#dates.createNow(),'HH:mm')}+' heure'"></p>
+<h1 th:text="'Mon titre:  '+${#strings.capitalize(title)}+' !'">Mon titre Bigmoletos!</h1>
+<h2 th:text="'Mon titre:  '+${#strings.toLowerCase(title)}+' !'">Mon titre Bigmoletos!</h2>
+<!-- <h2 th:text="'Mon titre  '+${#strings.capitalize(#strings.toLowerCase.(title))}+' !'">Mon titre Bigmoletos!</h2> -->
+<h1 th:text="'Mon titre:  '+${#strings.capitalizeWords(title)}+' !'">Mon titre Bigmoletos!</h1>
+
+</body>
+</html>
