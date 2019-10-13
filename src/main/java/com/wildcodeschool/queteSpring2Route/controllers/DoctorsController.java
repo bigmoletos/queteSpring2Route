@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class DoctorsController {
 	@RequestMapping("/doctors/{id}")
 	@ResponseBody
-	public ResponseEntity<String> choiceDoctor2(@PathVariable int id) {
+	public ResponseEntity<String> choiceDoctor(@PathVariable int id) {
 		String[] listeOfDoctors = { "William Hartnell", "Patrick Troughton", "Jon Pertwee", "Tom Baker",
 				"Peter Davison", "Colin Baker", "Sylvester McCoy", "Paul McGann", "Christopher Eccleston",
 				"David Tennant", "Matt Smith", "Peter Capaldi", "Jodie Whittaker" };
