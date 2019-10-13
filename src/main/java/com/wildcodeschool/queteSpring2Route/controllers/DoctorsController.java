@@ -25,7 +25,7 @@ public class DoctorsController {
 				"David Tennant", "Matt Smith", "Peter Capaldi", "Jodie Whittaker" };
 		String reponse = null;
 		for (int i = 0; i < listeOfDoctors.length; i++) {
-			if (id < 8) {
+			if (id >= 0 && id < 8) {
 //				HttpHeaders responseHeaders = new HttpHeaders();
 //				responseHeaders.set("MyResponseHeader", "MyValue");
 //				return new ResponseEntity<String>("http 201 created", responseHeaders, HttpStatus.CREATED);
